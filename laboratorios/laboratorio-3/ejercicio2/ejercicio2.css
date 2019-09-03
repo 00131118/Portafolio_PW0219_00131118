@@ -1,5 +1,11 @@
+html, body, .container{
+    width: 100%;
+    height: 100%;
+}
+
 body{
-    background-image: url(/ejercicio2/Multimedia/fondo.png)
+    background-image: url(/ejercicio2/Multimedia/fondo.png);
+    margin: 0;
 }
 
 h1{
@@ -7,8 +13,24 @@ h1{
     text-transform: uppercase;
 }
 
-div{
+.container{
     display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin: 3em 1em;
+}
+
+.imgRedonda{
+    width: 5em;
+    height: 5em;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 100%;
+    background-size: 100% auto;
+    object-fit: cover;
+    margin: 1em;
 }
 
 .btn{
@@ -16,7 +38,7 @@ div{
     border-radius: 0.3em;
     box-shadow: null;
     padding: 1em;
-    opacity: 0.8;
+    opacity: 1;
     text-transform: uppercase;
 }
 
@@ -24,7 +46,64 @@ div{
     opacity: 1.0;
 }
 
-.div1{
-    background-color: black;
+.btn.uno_arriba{
+    background-color: rgb(50, 70, 80);
+    color: white;
+}
+
+.btn.dos_arriba{
+    background-color: rgb(60, 80, 50);
+    color: white;
+}
+
+.btn.tres_arriba{
+    background-color: rgb(80, 50, 50);
+    color: white;
+    margin-right: 5em;
+}
+
+.btn.uno_abajo{
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+.btn.dos_abajo{
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+.div.arriba{
+    display: flex;
     justify-content: flex-end;
+}
+
+.div.centro{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div.abajo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.div_iconos1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+.div_iconos2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+hr{
+    width: 50%;
 }
