@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
+
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Fugaz One', cursive;
+    margin: 80px 0 0 0;
+}
+
+.gridContainer{
+    display: grid;
+    margin: 5em auto;
+    width: 50%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(5em, 7em);
+    grid-gap: 0.5em;
+    grid-auto-flow: row dense;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1{
+    grid-area: span 2/span 8;
+}
+
+.img2{
+    grid-area: span 4/span 2;
+}
+
+.img3, .img4{
+    grid-area: span 1/span 1;
+}
+
+.img5{
+    grid-area: span 2/span 4;
+}
+
+.img6{
+    grid-area: span 1/span 2;
+}
+
+.img7{
+    grid-area: span 2/span 2;
+}
+.img8{
+    grid-area: span 2/span 1;
+}
+
+.img9, .img10, .img11{
+    grid-area: span 1/span 1;
+}
+
+.img12{
+    grid-area: span 1/span 3;
+}
+
+.img13, .img14{
+    grid-area: span 2/span 4;
+}

@@ -1,0 +1,30 @@
+body{
+    background-image: url(/ejercicio2/Multimedia/fondo.png)
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+}
+
+div{
+    display: flex;
+}
+
+.btn{
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    box-shadow: null;
+    padding: 1em;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    opacity: 1.0;
+}
+
+.div1{
+    background-color: black;
+    justify-content: flex-end;
+}
