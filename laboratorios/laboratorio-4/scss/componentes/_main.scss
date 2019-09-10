@@ -1,0 +1,40 @@
+h1{
+    color: $blanco;
+    text-transform: uppercase;
+}
+
+hr{
+    @include set-dimension(50%, auto);
+}
+
+.imgRedonda{
+    @include set-dimension(5em, 5em);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 100%;
+    background-size: 100% auto;
+    object-fit: cover;
+    @include set-margin(0, 0);
+}
+
+.div.centro{
+    @include set-dimension(auto, 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .div_iconos1{
+        display: flex;
+        flex-wrap: wrap;
+        @include set-dimension(50%, auto);
+        justify-content: center;
+    }
+
+    .div_iconos2{
+        display: flex;
+        flex-wrap: wrap;
+        @include set-dimension(100%, auto);
+        justify-content: center;
+    }
+}

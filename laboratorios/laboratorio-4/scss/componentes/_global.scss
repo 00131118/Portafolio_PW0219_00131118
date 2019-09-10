@@ -1,0 +1,29 @@
+html, body, .container{
+    @include set-dimension(100%, 100%)
+}
+
+body{
+    background-image: url(/Multimedia/fondo.png);
+    @include set-margin(0, 0);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    @include set-margin(3em, 1em);
+}
+
+.btn{
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    box-shadow: null;
+    padding: 1em;
+    text-transform: uppercase;
+
+    &:hover{
+        opacity: 5;
+    }
+}

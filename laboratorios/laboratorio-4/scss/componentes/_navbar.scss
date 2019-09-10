@@ -1,0 +1,20 @@
+.div.arriba{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn.uno_arriba{
+    background-color: $azul;
+    color: $blanco;
+}
+
+.btn.dos_arriba{
+    background-color: $verde;
+    color: $blanco;
+}
+
+.btn.tres_arriba{
+    background-color: $rojo;
+    color: $blanco;
+    margin-right: 5em;
+}

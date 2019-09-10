@@ -1,0 +1,15 @@
+/* COLORES */
+$blanco: rgb(255, 255, 255);
+$azul: rgb(50, 70, 80);
+$verde: rgb(60, 80, 50);
+$rojo: rgb(80, 50, 50);
+$gris: rgb(60, 60, 60);
+
+@mixin set-dimension($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin set-margin($tb, $lr){
+    margin: $tb $lr;
+}
